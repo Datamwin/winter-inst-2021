@@ -10,6 +10,6 @@ nohup R CMD BATCH r_predict.R >/dev/null 2>&1 &
 * Same thing for 'py_predict.py'
 nohup python3 py_predict.py > file.output &
 
-* Download a password-protected file from the Dataverse website. The API is not needed when the file is not password-protected
+* Download a password-protected file from the Dataverse website. Remove the API and the header when the file is not password-protected
 wget -O figures.zip --header '<Dataverse API>' <Dataverse web link>
 
